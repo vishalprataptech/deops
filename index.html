@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+       <header style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#0f172a;color:white;font-family:Arial, sans-serif;">
+
+  <!-- Logo / Brand -->
+  <div style="font-size:20px;font-weight:bold;letter-spacing:1px;">
+    OpsKit
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" style="color:white;margin:0 10px;text-decoration:none;">Home</a>
+    <a href="#" style="color:white;margin:0 10px;text-decoration:none;">Docs</a>
+    <a href="#" style="color:white;margin:0 10px;text-decoration:none;">Features</a>
+    <a href="#" style="color:white;margin:0 10px;text-decoration:none;">Contact</a>
+  </nav>
+
+  <!-- Button -->
+  <div>
+    <button style="background:#38bdf8;border:none;padding:8px 14px;border-radius:6px;cursor:pointer;">
+      Get Started
+    </button>
+  </div>
+
+
+    </header>
+<main style="flex:3;padding:40px;background:#f8fafc;border-radius:12px;font-family:Arial, sans-serif;">
+
+  <h1 style="font-size:32px;margin-bottom:10px;">Welcome to OpsKit</h1>
+  <p style="color:#475569;max-width:700px;">
+    A modern DevOps toolkit designed to simplify monitoring, deployment, and infrastructure management.
+    Built for developers who want speed, clarity, and control.
+  </p>
+
+  <style>
+    .row {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin: 60px 0;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .text h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .text p {
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* ===== BIG ANIMATION BOX ===== */
+    .box {
+      width: 420px;
+      height: 260px;
+      border-radius: 16px;
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+      overflow: hidden;
+      background: #0f172a;
+    }
+
+    /* 1. GRID FLOW */
+    .grid {
+      background-image: linear-gradient(#38bdf8 1px, transparent 1px),
+                        linear-gradient(90deg, #38bdf8 1px, transparent 1px);
+      background-size: 35px 35px;
+      animation: gridMove 5s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes gridMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 35px 35px; }
+    }
+
+    /* 2. FLOATING DATA */
+    .dots {
+      background: radial-gradient(circle, #38bdf8 2px, transparent 3px);
+      background-size: 28px 28px;
+      animation: floatUp 4s ease-in-out infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* 3. SCAN LIGHT */
+    .scan {
+      background: linear-gradient(120deg, transparent 40%, rgba(56,189,248,0.35), transparent 60%);
+      animation: scanMove 3s linear infinite;
+    }
+
+    @keyframes scanMove {
+      0% { transform: translateX(-120%); }
+      100% { transform: translateX(120%); }
+    }
+
+    /* 4. PULSE CORE */
+    .pulse {
+      background: radial-gradient(circle, rgba(56,189,248,0.6), transparent 60%);
+      animation: pulseAnim 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulseAnim {
+      0% { transform: scale(0.9); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(0.9); opacity: 0.5; }
+    }
+
+    /* glow layer */
+    .glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, rgba(56,189,248,0.2), transparent 70%);
+    }
+
+  </style>
+
+  <!-- SECTION 1 -->
+  <section class="row">
+
+    <div class="box grid">
+      <div class="glow"></div>
+    </div>
+
+    <div class="text">
+      <h2>Infrastructure Grid</h2>
+      <p>
+        Visualize your entire system architecture as a dynamic grid that updates in real time.
+        Every node, service, and connection stays visible and traceable.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="row" style="flex-wrap:wrap-reverse;">
+
+    <div class="text">
+      <h2>Live Event Stream</h2>
+      <p>
+        Track logs, deployments, and system events as they happen.
+        No refresh needed — everything flows in real time.
+      </p>
+    </div>
+
+    <div class="box dots">
+      <div class="glow"></div>
+    </div>
+
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="row">
+
+    <div class="box scan">
+      <div class="glow"></div>
+    </div>
+
+    <div class="text">
+      <h2>Security Scanner</h2>
+      <p>
+        Continuous scanning engine that detects anomalies, threats, and performance issues instantly.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="row" style="flex-wrap:wrap-reverse;">
+
+    <div class="text">
+      <h2>System Health Core</h2>
+      <p>
+        A centralized intelligence layer that keeps track of uptime, latency, and system stability.
+      </p>
+    </div>
+
+    <div class="box pulse">
+      <div class="glow"></div>
+    </div>
+
+  </section>
+
+  <!-- EXTRA CTA SECTION -->
+  <section style="text-align:center;margin-top:80px;padding:40px;background:white;border-radius:12px;">
+
+    <h2>Ready to simplify DevOps?</h2>
+    <p style="color:#475569;">
+      Start monitoring your infrastructure in seconds with OpsKit.
+    </p>
+
+    <button style="margin-top:15px;padding:10px 18px;background:#38bdf8;border:none;border-radius:8px;color:white;cursor:pointer;">
+      Get Started
+    </button>
+
+  </section>
+
+</main>
+  
+        <footer style="background:#0f172a;color:#ffffff;padding:20px;font-family:Arial, sans-serif;margin-top:40px;">
+
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+
+    <!-- Brand -->
+    <div>
+      <h3 style="margin:0 0 10px 0;">OpsKit</h3>
+      <p style="margin:0;color:#94a3b8;">
+        Simplifying DevOps for modern developers.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h4>Quick Links</h4>
+      <ul style="list-style:none;padding:0;margin:0;color:#cbd5e1;">
+        <li>Home</li>
+        <li>Docs</li>
+        <li>Features</li>
+        <li>Support</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4>Contact</h4>
+      <p style="margin:0;color:#cbd5e1;">Email: support@opskit.dev</p>
+      <p style="margin:0;color:#cbd5e1;">Status: All systems operational</p>
+    </div>
+
+  </div>
+
+  <hr style="border:0;border-top:1px solid #334155;margin:20px 0;">
+
+  <p style="text-align:center;margin:0;color:#64748b;font-size:14px;">
+    © 2026 OpsKit. Built for developers, by developers.
+  </p>
+
+</footer>
+
+   
+</body>
+</html>

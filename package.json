@@ -10,7 +10,7 @@
     "typescript": "^5"
   },
   "scripts": {
-    "dev": "bun run index.ts"
+    "dev": "node index.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
