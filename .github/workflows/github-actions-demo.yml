@@ -27,8 +27,8 @@ jobs:
           -
             name: Build and push
             run: |
-             sudo docker build -t vishalpratapsingh/chaicode:demo .
-             sudo docker push vishalpratapsingh/chaicode:demo
+              docker build -t vishalpratapsingh/chaicode:demo .
+              docker push vishalpratapsingh/chaicode:demo
 
 
           - name: Deploy on Excloud
