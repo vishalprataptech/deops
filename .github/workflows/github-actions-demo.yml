@@ -44,6 +44,6 @@ jobs:
             sudo docker pull vishalpratapsingh/chaicode:demo
             sudo docker run -d \
               --name chaicode-app \
-              -p 3000:3000 \
+              -p 80:3000 \
               vishalpratapsingh/chaicode:demo
             sudo docker image prune -f
