@@ -1,6 +1,6 @@
 
 www.opskit.online {
-    tls opskit.online
+    
     handle {
         reverse_proxy nodejs-server:3000 {
             header_up Host {host}
