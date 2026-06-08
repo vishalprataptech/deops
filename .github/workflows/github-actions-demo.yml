@@ -40,10 +40,11 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
-            sudo docker rm -f chaicode-app || true
-            sudo docker pull vishalpratapsingh/chaicode:demo
-            sudo docker run -d \
-              --name chaicode-app \
-              -p 80:3000 \
-              vishalpratapsingh/chaicode:demo
-            sudo docker image prune -f
+           cd /home/ubuntu/deops
+           git pull origin main
+           sudo docker compose pull
+           sudo docker compose up -d
+           sudo docker image prune -f
+
+            
+            
