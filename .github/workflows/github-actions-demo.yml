@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
           - name: Check out repository code
-            uses: actions/checkout@v6
+            uses: actions/checkout@v4
           - name: Deploy on Excloud
             uses: appleboy/ssh-action@v1.0.3
             with:
               host: 210.79.129.187
               key: ${{secrets.PRIVATE_KEY}}
               script: |
-                export NUM_DIR="$HOME/.nvm"
-                [ -s "$NUM_DIR/nvm.sh"] && \. "$NVM_DIR/nvm.sh"s
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh"] && \. "$NVM_DIR/nvm.sh"s
                 cd /home/ubuntu/deops
                 git pull
                 npm install
