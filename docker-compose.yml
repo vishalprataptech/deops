@@ -21,6 +21,6 @@ services:
     
     
     
-    networks:
+networks:
         chaicode-internal:
           driver: bridge
